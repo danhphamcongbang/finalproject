@@ -1,0 +1,104 @@
+.fe02-wpb__col-container {
+  display: flex;
+  height: 335px;
+  padding: 0 -15px;
+
+  .fe02-wpb__col-context {
+    box-sizing: border-box;
+    .fe02-wpb__col-context__inner {
+      .fe02-wpb__col-context__inner__context {
+        .fe02-wpb__col-context__inner__context__block {
+          position: relative;
+
+          a {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background-color: transparent;
+            box-sizing: border-box;
+          }
+
+          .fe02-block {
+            margin-bottom: 10px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .fe02-wpb__caption {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 -125px 103px -60px #1a1a1a;
+
+            .fe02-wpb__caption__inner {
+              position: absolute;
+              width: 100%;
+              height: 112px;
+              bottom: 0;
+
+              .fe02-wpb__caption__team--name {
+                justify-content: center;
+                display: flex;
+                height:30px;
+                line-height: 20px;
+                font-weight: 700;
+                margin: 0 0 8px;
+                a {
+                  color: #ffffff;
+                  font-size: 16px;
+                  font-weight: 500;
+                  padding: 15px 20px;
+                  text-align: center;
+                  text-decoration: none;
+                  opacity: 1;
+                }
+              }
+
+              .fe02-wpb__caption__team-designation {
+                display: flex;
+                justify-content: center;
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+                margin: 0 0 12px;
+              }
+              .fe02-wpb__caption__team-social{
+                list-style: none;
+                display:flex;
+                justify-content:center;
+                opacity:1 !important;
+                .btn-facebook{
+                  color: #ffffff;
+                  text-decoration:none;
+                  padding-right:2px;
+                }
+                .btn-FaLinkedin{
+                  color: #ffffff;
+                  text-decoration:none;
+                }
+              }
+            }
+          }
+          .fe02-wpb__caption--hide{
+            position:absolute;
+            bottom: 0;
+            width:100%;
+            height:100%;
+            display:block;
+            background-color: #ffffff;
+            .fe02-wpb__caption__inner{
+              position:absolute;
+          }
+        }
+        }
+      }
+    }
+  }
+}
