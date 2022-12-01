@@ -9,7 +9,8 @@
 .fe02-container {
   width: 100vw;
   height: 585px;
-  padding: 0 11vw;
+  padding: 0 9vw;
+  background-color: rgba(0,0,0,0);;
 
   .fe02-container__wpb {
     width: 100%;
@@ -27,9 +28,9 @@
           height: 121px;
 
           h2 {
+            display: flex;
             font-size: 24px;
             margin-bottom: 10px;
-            text-align: center;
             font-weight: 500;
             justify-content: center;
           }

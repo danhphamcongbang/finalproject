@@ -8,7 +8,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
             {listContainer && listContainer.map((item, index) => {
                 return (
                     <>
-                        <div className="fe02-wpb__col-context col-sm-3">
+                        <div className="fe02-wpb__col-context  col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
                             <div className="fe02-wpb__col-context__inner">
                                 <div className="fe02-wpb__col-context__inner__context">
                                     <div className="fe02-wpb__col-context__inner__context__block">
@@ -43,7 +43,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
 
                                             </div>
                                         </div>
-                                        <div className="fe02-wpb__caption--after">
+                                        <div className="fe02-wpb__caption--after ">
                                             <div className="fe02-wpb__caption__inner">
                                                 <h4 className="fe02-wpb__caption__team--name">
                                                     <a href="#">
