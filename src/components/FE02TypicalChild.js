@@ -14,7 +14,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
                                     <div className="fe02-wpb__col-context__inner__context__block">
                                         <a className="fe02-block"></a>
                                         <img src={item.image} alt="image"/>
-                                        <div className="fe02-wpb__caption card-img-overlay">
+                                        <div className="fe02-wpb__caption--before">
                                             <div className="fe02-wpb__caption__inner">
                                                 <h4 className="fe02-wpb__caption__team--name">
                                                     <a href="#">
@@ -43,7 +43,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
 
                                             </div>
                                         </div>
-                                        <div className="fe02-wpb__caption--hide">
+                                        <div className="fe02-wpb__caption--after">
                                             <div className="fe02-wpb__caption__inner">
                                                 <h4 className="fe02-wpb__caption__team--name">
                                                     <a href="#">

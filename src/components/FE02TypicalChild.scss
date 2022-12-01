@@ -5,15 +5,16 @@
 
   .fe02-wpb__col-context {
     box-sizing: border-box;
+
     .fe02-wpb__col-context__inner {
       .fe02-wpb__col-context__inner__context {
         .fe02-wpb__col-context__inner__context__block {
           position: relative;
+          overflow: hidden;
 
           a {
             height: 100%;
             width: 100%;
-            z-index: 1;
             background-color: transparent;
             box-sizing: border-box;
           }
@@ -27,12 +28,35 @@
             height: 100%;
           }
 
-          .fe02-wpb__caption {
+          .fe02-wpb__caption--after {
+            opacity: 0;
+            position: absolute;
+            transform: translateX(100%);
+            background-color: rgba(255, 255, 255, .9);
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            box-shadow: 0 0 2px #b3b0b0;
+            transition: all 1s ease 0s;
+
+            .fe02-wpb__caption__inner {
+              max-height: 100%;
+              padding: 15px 20px;
+              position: absolute;
+              text-align: center;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+
+          .fe02-wpb__caption--before {
             display: block;
             position: absolute;
             width: 100%;
             height: 100%;
             bottom: 0;
+            right: 0;
             background-color: rgba(0, 0, 0, 0.1);
             box-shadow: inset 0 -125px 103px -60px #1a1a1a;
 
@@ -40,15 +64,17 @@
               position: absolute;
               width: 100%;
               height: 112px;
+              padding: 0 15px;
               bottom: 0;
 
               .fe02-wpb__caption__team--name {
                 justify-content: center;
                 display: flex;
-                height:30px;
+                height: 30px;
                 line-height: 20px;
                 font-weight: 700;
                 margin: 0 0 8px;
+
                 a {
                   color: #ffffff;
                   font-size: 16px;
@@ -69,34 +95,37 @@
                 font-weight: 400;
                 margin: 0 0 12px;
               }
-              .fe02-wpb__caption__team-social{
+
+              .fe02-wpb__caption__team-social {
                 list-style: none;
-                display:flex;
-                justify-content:center;
-                opacity:1 !important;
-                .btn-facebook{
+                display: flex;
+                justify-content: center;
+                opacity: 1 !important;
+
+                .btn-facebook {
                   color: #ffffff;
-                  text-decoration:none;
-                  padding-right:2px;
+                  text-decoration: none;
+                  padding-right: 2px;
                 }
-                .btn-FaLinkedin{
+
+                .btn-FaLinkedin {
                   color: #ffffff;
-                  text-decoration:none;
+                  text-decoration: none;
                 }
               }
             }
           }
-          .fe02-wpb__caption--hide{
-            position:absolute;
-            bottom: 0;
-            width:100%;
-            height:100%;
-            display:block;
-            background-color: #ffffff;
-            .fe02-wpb__caption__inner{
-              position:absolute;
+
+          &:hover {
+            .fe02-wpb__caption--before {
+              transition: all 1s ease 0s;
+              left: 0;
+            }
+            .fe02-wpb__caption--after {
+              opacity: 1;
+              transform: translateX(0);
+            }
           }
-        }
         }
       }
     }
