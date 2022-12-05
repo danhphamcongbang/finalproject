@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,400&display=swap');
 .green {
   border: 1px solid green
 }
@@ -7,8 +8,6 @@
 }
 
 .fe02-container {
-  width: 100vw;
-  height: 585px;
   padding: 0 9vw;
   background-color: rgba(0,0,0,0);;
 
@@ -18,14 +17,14 @@
 
     .fe02-container__wpb__inner {
       padding: 0 10px;
-      height: 100%;
 
       .fe02-wpb__wrapper {
         width: 100%;
 
         .fe02-textcenter {
+          font-family: 'Roboto', sans-serif;
           padding-top: 55px;
-          height: 121px;
+          max-height:35vh;
 
           h2 {
             display: flex;
@@ -45,7 +44,7 @@
         }
 
         .fe02-emptyspace {
-          height: 32px;
+          height: 10px;
         }
       }
     }

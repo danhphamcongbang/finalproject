@@ -2,13 +2,14 @@ import {FaFacebookSquare, FaLinkedin} from "react-icons/fa";
 import {Link} from "react-router-dom";
 import './FE02TypicalChild.scss'
 
-const FE02TypicalChild = ({listContainer, SetListContainer}) => {
+const FE02TypicalChild = (props) => {
+   const {listContainerBang, SetListContainerBang } = props
     return(
         <div className="fe02-wpb__col-container row">
-            {listContainer && listContainer.map((item, index) => {
+            {listContainerBang && listContainerBang.map((item, index) => {
                 return (
                     <>
-                        <div className="fe02-wpb__col-context  col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+                        <div className="fe02-wpb__col-context col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
                             <div className="fe02-wpb__col-context__inner">
                                 <div className="fe02-wpb__col-context__inner__context">
                                     <div className="fe02-wpb__col-context__inner__context__block">
@@ -17,7 +18,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
                                         <div className="fe02-wpb__caption--before">
                                             <div className="fe02-wpb__caption__inner">
                                                 <h4 className="fe02-wpb__caption__team--name">
-                                                    <a href="#">
+                                                    <a href="src/components/task__bang/task1/FE02TypicalChild#">
                                                         {
                                                             item.teamCaption
                                                         }
@@ -30,7 +31,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
                                                 </p>
                                                 <ul className="fe02-wpb__caption__team-social" style={{padding:"0 0"}}>
                                                     <li>
-                                                        <a target="_blank" href="https://www.facebook.com/stunited.vn/" className="btn-facebook">
+                                                        <a target="_blank" href="https://www.facebook.com/stunited.vn" className="btn-facebook">
                                                             <FaFacebookSquare style={{borderRadius:"7px"}}/>
                                                         </a>
                                                     </li>
@@ -46,7 +47,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
                                         <div className="fe02-wpb__caption--after ">
                                             <div className="fe02-wpb__caption__inner">
                                                 <h4 className="fe02-wpb__caption__team--name">
-                                                    <a href="#">
+                                                    <a href="src/components/task__bang/task1/FE02TypicalChild#">
                                                         {
                                                             item.teamCaption
                                                         }
@@ -64,7 +65,7 @@ const FE02TypicalChild = ({listContainer, SetListContainer}) => {
                                                 </p>
                                                 <ul className="fe02-wpb__caption__team-social" style={{padding:"0 0"}}>
                                                     <li>
-                                                        <a target="_blank" href="https://www.facebook.com/stunited.vn/" className="btn-facebook">
+                                                        <a target="_blank" href="https://www.facebook.com/stunited.vn" className="btn-facebook">
                                                             <FaFacebookSquare style={{borderRadius:"7px"}}/>
                                                         </a>
                                                     </li>

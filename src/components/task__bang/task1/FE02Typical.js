@@ -17,7 +17,7 @@ const FE02Typical = () => {
         },
         {
             id: "fe02-2", image: "https://stunited.vn/wp-content/uploads/2019/09/image-logo-1.png"
-            , teamCaption: "Havuta", teamDesigner: "#Javascript #HTML #CSS",
+            ,teamCaption: "Havuta", teamDesigner: "#Blockchain #NodeJS #ReactJS #React Native",
             teamCaptionHide: "\n" +
                 "                            Havuta brings smartphone and blockchain-based solutions to the data collection challenges facing the development sector. Creating a blockchain-based feedback loop benefiting NGOs, engaging their beneficiaries, and promoting transparency. "
         },
@@ -57,8 +57,8 @@ const FE02Typical = () => {
                             </div>
                             <div className="fe02-emptyspace"></div>
                             <FE02TypicalChild
-                                listContainer={list}
-                                SetListContainer={setList}
+                                listContainerBang={list}
+                                SetListContainerBAng={setList}
                             />
                         </div>
                     </div>
