@@ -7,8 +7,8 @@
 }
 
 .fe07-container {
-  background-color: rgba(0,0,0,0);
-  height:100vh;
+  background-color: rgba(0,0,0,0.01);
+  height: 100%;
   display: flex;
   justify-content: center;
 
@@ -22,12 +22,12 @@
         height:30px;
       }
       .fe07-context__wpb--block {
-        padding: 55px 0;
+        padding: 45px 0;
 
         .fe07-context__wpb--block--col {
           .fe07-context__wpb--block--item {
             max-height:1005px;
-            padding:0 15px 50px 15px;
+            padding:0 15px 30px 15px;
 
             .fe07-context__wpb--service {
               font-family: 'Roboto', sans-serif;
